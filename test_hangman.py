@@ -8,6 +8,9 @@ def test_get_random_word_no_non_alphanum():
     word = hangman.get_random_word()
     assert word.isalpha()
 
+def test_get_random_word_no_proper_noun():
+    word = hangman.get_random_word()
+    assert not word[0].isupper()
 
 
 # RED - Implement a test that will fail
