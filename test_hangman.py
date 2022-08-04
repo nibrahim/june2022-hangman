@@ -49,3 +49,6 @@ def test_mask_word_no_guesses():
     for i in ["police", "elephant", "it", "foo"]:
         assert hangman.mask_word(i, []) == len(i)*"-"
 
+def test_mark_word_invalid_guesses():
+    for i in ["police", "elephant", "it", "foo"]:
+        assert hangman.mask_word(i, ["x", "q"]) == len(i)*"-"
