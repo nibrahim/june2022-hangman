@@ -14,3 +14,6 @@ def get_random_word(dictfile="/usr/share/dict/words"):
 
     return random.choice(good_words)
 
+
+def mask_word(word, guesses):
+    return "------"
