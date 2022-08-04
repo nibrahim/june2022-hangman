@@ -13,3 +13,20 @@ A Hangman game similar to `/usr/games/hangman` written as a TDD exercise
        
         w = hangman.get_random_word()
         print(w) # might be 'elephant'
+        
+   2. ?
+      - inputs - secret word, guessed letters
+      - output - Will return a string with
+        1. `-` for letters that have not been guessed
+        2. The actual letter in the correct position for letters than have been guessed
+        
+        t = x("elephant", [])
+        # t should be "--------"
+        t = x("elephant", ["e"])
+        # t should be "e-e-----"
+        t = x("elephant", ["e", "a"])
+        # t should be "e-e--a--"
+        t = x("elephant", ["e", "a", "x"])
+        # t should be "e-e--a--"
+
+
