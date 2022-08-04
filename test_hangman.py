@@ -46,4 +46,6 @@ def test_get_random_word():
 # REFACTOR - Adjust the code so that all tests pass and code is improved
 
 def test_mask_word_no_guesses():
-    assert hangman.mask_word("police", []) == "------"
+    for i in ["police", "elephant", "it", "foo"]:
+        assert hangman.mask_word(i, []) == len(i)*"-"
+
