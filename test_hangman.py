@@ -44,3 +44,6 @@ def test_get_random_word():
 # RED - Implement a test that will fail
 # GREEN - Make the test pass
 # REFACTOR - Adjust the code so that all tests pass and code is improved
+
+def test_mask_word_no_guesses():
+    assert hangman.mask_word("police", []) == "------"
