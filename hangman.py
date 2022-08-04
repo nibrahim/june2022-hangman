@@ -16,4 +16,4 @@ def get_random_word(dictfile="/usr/share/dict/words"):
 
 
 def mask_word(word, guesses):
-    return "------"
+    return "-" * len(word)
